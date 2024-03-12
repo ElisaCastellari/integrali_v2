@@ -1,0 +1,22 @@
+/** \file structs.h
+	\brief defines the structs 
+	\author Paolo Gastaldo
+
+	Details.
+*/
+
+//#define _CRT_SECURE_NO_WARNINGS
+#ifndef STRUCTS_H 
+#define STRUCTS_H
+
+/*! \struct Poly
+	\brief stores the coefficients of a polynomial
+
+	coeffs[0] + coeffs[1]*x + coeffs[2]*x^2 + ......	
+*/
+typedef struct Poly {
+	double* coeffs; 	/* the coefficients, starting from the bias value  */
+	int degree; 	/* the number of elements in the array */
+} poly_s;
+
+#endif
